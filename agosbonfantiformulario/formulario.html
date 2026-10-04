@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Tu música</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Tu música favorita</h1>
+
+    <nav class="navbar">
+        <div class="logo">Music</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="generos.html">Géneros</a></li>
+            <li><a href="formulario.html">Tu música</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Queremos conocer tus gustos</h2>
+        <p class="intro">Completá el formulario y contanos qué música escuchás.</p>
+
+        <form class="music-form" action="#" method="post">
+
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="lucía@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genero">Género favorito:</label>
+                <select id="genero" name="genero">
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="rap">Rap</option>
+                    <option value="reggaeton">Reggaetón</option>
+                    <option value="electronica">Electrónica</option>
+                    <option value="indie">Indie</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="artista">Artista favorito:</label>
+                <input type="text" id="artista" name="artista" placeholder="Tu artista favorito">
+            </div>
+
+            <div class="form-group">
+                <label for="cancion">Canción favorita:</label>
+                <input type="text" id="cancion" name="cancion" placeholder="Tu canción favorita">
+            </div>
+
+            <div class="form-group">
+                <label for="comentario">¿Por qué te gusta?</label>
+                <textarea id="comentario" name="comentario" rows="5" placeholder="Contanos qué te gusta de esa canción..."></textarea>
+            </div>
+
+            <button type="submit">Enviar respuesta</button>
+        </form>
+    </section>
+
+</body>
+</html>
